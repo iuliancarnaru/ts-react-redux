@@ -5,4 +5,4 @@ import logger from "redux-logger";
 
 const middlewares = [thunk, logger];
 
-export const store = createStore(reducers, applyMiddleware(...middlewares));
+export const store = createStore(reducers, {}, applyMiddleware(...middlewares));
